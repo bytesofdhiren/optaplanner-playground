@@ -23,7 +23,7 @@ import java.util.List;
 
 
 import com.thoughtworks.xstream.annotations.XStreamConverter;
-import com.thoughtworks.xstream.annotations.XStreamInclude;
+//import com.thoughtworks.xstream.annotations.XStreamInclude;
 import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;
 import org.optaplanner.core.api.domain.solution.Solution;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
@@ -32,13 +32,13 @@ import org.optaplanner.core.impl.score.buildin.hardsoftlong.HardSoftLongScoreDef
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 import org.optaplanner.examples.vehiclerouting.domain.location.DistanceType;
 import org.optaplanner.examples.vehiclerouting.domain.location.Location;
-import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedVehicleRoutingSolution;
+//import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedVehicleRoutingSolution;
 import org.optaplanner.persistence.xstream.impl.score.XStreamScoreConverter;
 
 @org.optaplanner.core.api.domain.solution.PlanningSolution
-@XStreamInclude({
-        TimeWindowedVehicleRoutingSolution.class
-})
+//@XStreamInclude({
+//        TimeWindowedVehicleRoutingSolution.class
+//})
 public class VehicleRoutingSolution extends AbstractPersistable implements Solution<HardSoftLongScore> {
 
     protected String name;
