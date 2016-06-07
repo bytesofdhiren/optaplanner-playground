@@ -16,15 +16,13 @@
 
 package org.optaplanner.examples.vehiclerouting.domain.timewindowed;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.CustomShadowVariable;
 import org.optaplanner.examples.vehiclerouting.domain.Customer;
-import org.optaplanner.examples.vehiclerouting.domain.Standstill;
+
 import org.optaplanner.examples.vehiclerouting.domain.timewindowed.solver.ArrivalTimeUpdatingVariableListener;
 
 @PlanningEntity
-@XStreamAlias("VrpTimeWindowedCustomer")
 public class TimeWindowedCustomer extends Customer {
 
     // Times are multiplied by 1000 to avoid floating point arithmetic rounding errors
