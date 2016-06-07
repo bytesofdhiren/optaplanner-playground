@@ -16,14 +16,14 @@
 
 package org.optaplanner.examples.vehiclerouting.domain;
 
-import com.thoughtworks.xstream.annotations.XStreamInclude;
+//import com.thoughtworks.xstream.annotations.XStreamInclude;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 import org.optaplanner.examples.vehiclerouting.domain.location.Location;
-import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedDepot;
+//import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedDepot;
 
-@XStreamInclude({
-        TimeWindowedDepot.class
-})
+//@XStreamInclude({
+//        TimeWindowedDepot.class
+//})
 public class Depot extends AbstractPersistable {
 
     protected Location location;

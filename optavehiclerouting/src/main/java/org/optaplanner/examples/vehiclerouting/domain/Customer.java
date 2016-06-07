@@ -17,19 +17,19 @@
 package org.optaplanner.examples.vehiclerouting.domain;
 
 
-import com.thoughtworks.xstream.annotations.XStreamInclude;
+//import com.thoughtworks.xstream.annotations.XStreamInclude;
 import org.optaplanner.core.api.domain.variable.AnchorShadowVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 import org.optaplanner.examples.vehiclerouting.domain.location.Location;
 import org.optaplanner.examples.vehiclerouting.domain.solver.DepotAngleCustomerDifficultyWeightFactory;
-import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedCustomer;
+//import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedCustomer;
 
 @org.optaplanner.core.api.domain.entity.PlanningEntity(difficultyWeightFactoryClass = DepotAngleCustomerDifficultyWeightFactory.class)
-@XStreamInclude({
-        TimeWindowedCustomer.class
-})
+//@XStreamInclude({
+//        TimeWindowedCustomer.class
+//})
 public class Customer extends AbstractPersistable implements Standstill {
 
     protected Location location;
