@@ -18,7 +18,6 @@ package org.optaplanner.examples.vehiclerouting.domain.location.segmented;
 
 import java.util.Map;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
 import org.optaplanner.examples.vehiclerouting.domain.location.DistanceType;
 import org.optaplanner.examples.vehiclerouting.domain.location.Location;
 import org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation;
@@ -28,7 +27,6 @@ import org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation;
  * but for high scale problems to avoid the memory issue of keeping the entire cost matrix in memory.
  * Used with {@link DistanceType#SEGMENTED_ROAD_DISTANCE}.
  */
-@XStreamAlias("VrpRoadSegmentLocation")
 public class RoadSegmentLocation extends Location {
 
     // Prefer Map over array or List because customers might be added and removed in real-time planning.

@@ -18,7 +18,7 @@ package org.optaplanner.examples.vehiclerouting.domain.location.segmented;
 
 import java.util.Map;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import org.optaplanner.examples.vehiclerouting.domain.location.DistanceType;
 import org.optaplanner.examples.vehiclerouting.domain.location.Location;
 
@@ -26,7 +26,6 @@ import org.optaplanner.examples.vehiclerouting.domain.location.Location;
  * Assistant for {@link RoadSegmentLocation}.
  * Used with {@link DistanceType#SEGMENTED_ROAD_DISTANCE}.
  */
-@XStreamAlias("VrpHubSegmentLocation")
 public class HubSegmentLocation extends Location {
 
     // Prefer Map over array or List because customers might be added and removed in real-time planning.
