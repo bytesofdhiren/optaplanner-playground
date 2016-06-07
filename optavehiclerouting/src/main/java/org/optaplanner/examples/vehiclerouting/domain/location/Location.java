@@ -22,10 +22,10 @@ import org.optaplanner.examples.common.domain.AbstractPersistable;
 import org.optaplanner.examples.vehiclerouting.domain.VehicleRoutingSolution;
 
 
-@XStreamInclude({
-        AirLocation.class,
-        RoadLocation.class
-})
+//@XStreamInclude({
+//        AirLocation.class,
+//        RoadLocation.class
+//})
 public abstract class Location extends AbstractPersistable {
 
     protected String name = null;
