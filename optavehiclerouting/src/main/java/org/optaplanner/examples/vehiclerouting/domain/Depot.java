@@ -16,23 +16,26 @@
 
 package org.optaplanner.examples.vehiclerouting.domain;
 
-//import com.thoughtworks.xstream.annotations.XStreamInclude;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamInclude;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
+import org.optaplanner.examples.vehiclerouting.domain.location.AirLocation;
 import org.optaplanner.examples.vehiclerouting.domain.location.Location;
-//import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedDepot;
+import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedDepot;
 
+//@XStreamAlias("VrpDepot")
 //@XStreamInclude({
 //        TimeWindowedDepot.class
 //})
 public class Depot extends AbstractPersistable {
 
-    protected Location location;
+    protected AirLocation location;
 
-    public Location getLocation() {
+    public AirLocation getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(AirLocation location) {
         this.location = location;
     }
 
