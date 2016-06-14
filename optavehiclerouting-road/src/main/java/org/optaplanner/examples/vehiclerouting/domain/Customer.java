@@ -23,7 +23,7 @@ import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 import org.optaplanner.examples.vehiclerouting.domain.location.Location;
-import org.optaplanner.examples.vehiclerouting.domain.location.AirLocation;
+import org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation;
 import org.optaplanner.examples.vehiclerouting.domain.solver.DepotAngleCustomerDifficultyWeightFactory;
 //import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedCustomer;
 
@@ -33,7 +33,7 @@ import org.optaplanner.examples.vehiclerouting.domain.solver.DepotAngleCustomerD
 //})
 public class Customer extends AbstractPersistable implements Standstill {
 
-    protected AirLocation location;
+    protected RoadLocation location;
     protected int demand;
 
     // Planning variables: changes during planning, between score calculations.
@@ -47,7 +47,7 @@ public class Customer extends AbstractPersistable implements Standstill {
         return location;
     }
 
-    public void setLocation(AirLocation location) {
+    public void setLocation(RoadLocation location) {
         this.location = location;
     }
 
