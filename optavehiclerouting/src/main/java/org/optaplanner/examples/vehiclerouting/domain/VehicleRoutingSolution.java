@@ -25,7 +25,6 @@ import java.util.List;
 //import com.thoughtworks.xstream.annotations.XStreamConverter;
 //import com.thoughtworks.xstream.annotations.XStreamInclude;
 import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;
-import org.optaplanner.core.api.domain.solution.PlanningSolution;
 import org.optaplanner.core.api.domain.solution.Solution;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
@@ -36,7 +35,7 @@ import org.optaplanner.examples.vehiclerouting.domain.location.Location;
 //import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedVehicleRoutingSolution;
 //import org.optaplanner.persistence.xstream.impl.score.XStreamScoreConverter;
 
-@PlanningSolution
+@org.optaplanner.core.api.domain.solution.PlanningSolution
 //@XStreamAlias("VrpVehicleRoutingSolution")
 //@XStreamInclude({
 //        TimeWindowedVehicleRoutingSolution.class
